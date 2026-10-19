@@ -37,9 +37,10 @@ QUERIES: dict[str, str] = {
 
     "4. Konsentrasi wisman per pintu masuk (2019 vs 2025)": """
         with a as (select f.pintu_masuk, w.tahun, sum(jumlah_kunjungan) n
-                   from fact_wisman f join dim_waktu w using (waktu_id) where w.tahun in (2019, 2025) group by 1, 2)
-        select tahun, pintu_masuk, n, round(100.0 * n / sum(n) over (partition by tahun), 1) as pangsa
-        from a where pintu_masuk in ('Ngurah Rai', 'Soekarno-Hatta', 'Batam', 'Pintu Darat Lainnya', 'Juanda', 'Kualanamu')
+                   from fact_wisman f join dim_waktu w using (waktu_id) where w.tahun in (2019, 2025) group by 1, 2),
+             b as (select *, round(100.0 * n / sum(n) over (partition by tahun), 1) as pangsa from a)  -- pangsa dari TOTAL semua pintu
+        select tahun, pintu_masuk, n, pangsa
+        from b where pintu_masuk in ('Ngurah Rai', 'Soekarno-Hatta', 'Batam', 'Pintu Darat Lainnya', 'Juanda', 'Kualanamu')
         order by tahun, n desc""",
 
     "5. Ketimpangan wisnus antarprovinsi 2025 (top 5 & pangsa)": """

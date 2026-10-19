@@ -188,7 +188,7 @@ Semua angka berikut diperoleh dari query ke hub (`python -m etl.insights`), buka
 *Interpretasi:* Wisman mengikuti musim liburan musim panas negara asal (Eropa, Australia), sedangkan wisnus mengikuti kalender libur nasional. Pengelola destinasi bisa memanfaatkan perbedaan puncak ini untuk mengisi kapasitas sepanjang tahun, misalnya mempromosikan pasar domestik pada Juli–Agustus di destinasi yang kurang diminati wisman. `[VERIFIKASI: tanggal Idulfitri bergeser tiap tahun; puncak April bersifat rata-rata]`
 
 **Insight 4 — Konsentrasi pintu masuk wisman makin tinggi ke Bali.**
-*Temuan + angka:* Bandara Ngurah Rai menyumbang **48,0%** wisman pada 2019 dan naik menjadi **53,2%** pada 2025 (6,91 juta kunjungan). Soekarno-Hatta naik dari 18,6% ke 21,3%. Pintu darat "lainnya" turun dari 14,6% menjadi 8,4%, dan Batam turun dari 15,0% menjadi 12,3%.
+*Temuan + angka:* Bandara Ngurah Rai menyumbang **38,7%** wisman pada 2019 dan naik menjadi **44,9%** pada 2025 (6,91 juta kunjungan). Soekarno-Hatta naik dari 15,0% ke 17,9%. Pintu darat "lainnya" turun dari 11,8% menjadi 7,1%, dan Batam turun dari 12,1% menjadi 10,4%.
 *Interpretasi:* Pemulihan wisman sangat bergantung pada satu gerbang. Ini menjadi risiko konsentrasi (bencana atau gangguan di Bali langsung berdampak nasional) sekaligus tanda bahwa agenda pengembangan destinasi prioritas di luar Bali belum terlihat dalam data pintu masuk.
 
 **Insight 5 — Ketimpangan antarprovinsi: Jawa menyerap 64,8% wisnus dengan 44,5% kamar.**
