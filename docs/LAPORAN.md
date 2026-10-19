@@ -8,7 +8,7 @@
 
 | Tautan | Nilai |
 |---|---|
-| Repository | *[URL repo GitHub]* |
+| Repository | https://github.com/Mikeljeksen/eai-dashboard-pariwisata |
 | Website | *[URL Vercel]* |
 | Akun demo | `demo@pariwisata.id` / `Demo-KPjFK4wp1GMUFx!9` |
 
