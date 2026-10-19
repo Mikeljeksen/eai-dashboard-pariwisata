@@ -9,6 +9,8 @@ dashboard **tidak pernah membaca file mentah**. Semua sumber masuk lewat pipelin
 ke **satu database terpusat (Supabase Postgres)** yang berperan sebagai *hub* integrasi, lalu website hanya membaca
 dari hub tersebut.
 
+**Live:** https://eai-dashboard-pariwisata.vercel.app · **Repo:** https://github.com/Mikeljeksen/eai-dashboard-pariwisata
+
 > Screenshot: *(tambahkan `docs/screenshots/*.png` setelah deploy)*
 >
 > | Overview | Analisis Provinsi | Pipeline ETL | Tabel Data |
