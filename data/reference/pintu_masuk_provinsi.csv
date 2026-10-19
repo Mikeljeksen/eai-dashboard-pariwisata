@@ -1,0 +1,31 @@
+pintu_masuk,jenis_pintu,provinsi_kode,keterangan
+Ngurah Rai,udara,51,Bandara I Gusti Ngurah Rai - Badung
+Soekarno-Hatta,udara,36,Bandara Soekarno-Hatta - Kota Tangerang (secara administratif Banten; melayani Jabodetabek)
+Juanda,udara,35,Bandara Juanda - Sidoarjo
+Kualanamu,udara,12,Bandara Kualanamu - Deli Serdang
+Husein Sastranegara,udara,32,Bandara Husein Sastranegara - Bandung
+Adi Sucipto,udara,34,Bandara Adisutjipto / YIA - Yogyakarta
+Bandara Int. Lombok,udara,52,Bandara Internasional Lombok - Lombok Tengah
+Sam Ratulangi,udara,71,Bandara Sam Ratulangi - Manado
+Minangkabau,udara,13,Bandara Internasional Minangkabau - Padang Pariaman
+Sultan Syarif Kasim II,udara,14,Bandara SSK II - Pekanbaru
+Sultan Iskandar Muda,udara,11,Bandara SIM - Aceh Besar
+Ahmad Yani,udara,33,Bandara Jenderal Ahmad Yani - Semarang
+Supadio,udara,61,Bandara Supadio - Kubu Raya
+Hasanuddin,udara,73,Bandara Sultan Hasanuddin - Maros
+Sultan Badaruddin II,udara,16,Bandara SMB II - Palembang
+Pintu Udara Lainnya,udara,,Gabungan bandara lain (lokasi tidak dapat dipetakan)
+Batam,laut,21,Pelabuhan Batam
+Tanjung Uban,laut,21,Pelabuhan Tanjung Uban - Bintan
+Tanjung Pinang,laut,21,Pelabuhan Sri Bintan Pura - Tanjung Pinang
+Tanjung Balai Karimun,laut,21,Pelabuhan Tanjung Balai Karimun
+Tanjung Benoa,laut,51,Pelabuhan Tanjung Benoa - Bali
+Tanjung Mas,laut,33,Pelabuhan Tanjung Emas - Semarang
+Pintu Laut Lainnya,laut,,Gabungan pelabuhan lain
+Jayapura,darat,94,PLBN Skouw - Jayapura
+Atambua,darat,53,PLBN Motaain - Belu
+Entikong,darat,61,PLBN Entikong - Sanggau
+Aruk,darat,61,PLBN Aruk - Sambas
+Nanga Badau,darat,61,PLBN Nanga Badau - Kapuas Hulu
+Pintu Darat Lainnya,darat,,Gabungan pos lintas batas lain
+Lainnya,lainnya,,Pintu masuk lain di luar kategori (BPS)
