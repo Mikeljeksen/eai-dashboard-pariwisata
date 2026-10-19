@@ -50,3 +50,6 @@ __pycache__/
 .tmp/
 web-geo/
 .claude/
+
+.vercel
+.env*
