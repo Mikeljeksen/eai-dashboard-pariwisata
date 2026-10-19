@@ -1,0 +1,42 @@
+# One-way synchronization terjadwal: sumber (data/raw) -> hub Supabase Postgres.
+# Dijalankan mingguan dan bisa dipicu manual (workflow_dispatch).
+name: ETL sync ke Supabase
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 19 * * 0"   # setiap Senin 02:00 WIB (Minggu 19:00 UTC)
+
+concurrency:
+  group: etl
+  cancel-in-progress: false
+
+jobs:
+  etl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: etl/requirements.txt
+
+      - name: Install dependensi ETL
+        run: pip install -r etl/requirements.txt
+
+      - name: Jalankan ETL (trigger=scheduled)
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          PYTHONIOENCODING: utf-8
+        run: python -m etl.run_etl --trigger scheduled
+
+      - name: Simpan log baris yang dibuang
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rejected-rows
+          path: data/rejected/
+          retention-days: 14
